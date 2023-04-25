@@ -343,8 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyRigidbody2: {fileID: 1877978444}
   RobotAnimator: {fileID: 1877978445}
-  MovementMultiplier: 0.01
-  TurningMultiplier: 0.5
+  MovementMultiplier: 2
+  TurningMultiplier: 200
 --- !u!61 &1877978440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 8.34}
+    oldSize: {x: 10.24, y: 12.13}
     newSize: {x: 10.24, y: 8.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

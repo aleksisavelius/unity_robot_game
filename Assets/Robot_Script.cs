@@ -41,10 +41,10 @@ public class Robot_Script : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             // update variable
-            //RobotIsGripping = true;
-
+            RobotIsGripping = true;
+            
             // Set Animation
-            //RobotAnimator.SetBool("RobotGripping", true);
+            RobotAnimator.SetBool("RobotGripping", true);
 
             Debug.Log(" Gripping pressed");
 
@@ -53,13 +53,16 @@ public class Robot_Script : MonoBehaviour
         }
         else
         {
-
-                
+            if (RobotAnimator.GetCurrentAnimatorStateInfo(0).IsName("Robot_GripAnimation") == false)
+            {
                 // update variable
                 RobotIsGripping = false;
 
                 // Set Animation
-                //RobotAnimator.SetBool("RobotGripping", false)
+                RobotAnimator.SetBool("RobotGripping", false);
+
+            }
+
 
         }
         
